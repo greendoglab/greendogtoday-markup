@@ -1,0 +1,11 @@
+# basics
+npm-debug.log
+.sass-cache
+.DS_Store
+npm-debug.log
+node_modules
+bower_components
+
+# static
+src/assets/css
+production
