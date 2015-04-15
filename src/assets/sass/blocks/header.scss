@@ -1,10 +1,13 @@
 .site-header {
     background-color: #2ECC71;
+    padding: 10px 0;
     .top-menu {
-        @include clear-list-inline;
-        padding: 10px 0;
+        display: flex;
+        align-items: center;
+        @include clear-list;
         li {
             margin-right: 35px;
+            flex: 0 0 auto;
             a {
                 text-decoration: none;
                 color: white;
