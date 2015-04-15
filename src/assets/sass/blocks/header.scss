@@ -1,0 +1,37 @@
+.site-header {
+    background-color: #2ECC71;
+    padding: 10px 0;
+    .top-menu {
+        display: flex;
+        align-items: center;
+        @include clear-list;
+        li {
+            margin-right: 35px;
+            flex: 0 0 auto;
+            a {
+                text-decoration: none;
+                color: white;
+            } // a
+            input {
+                padding: 10px;
+                border-radius: 2px;
+                border: 1px solid white;
+                width: 250px;
+            } // input
+            button {
+                i {
+                    width: 22px;
+                    height: 22px;
+                    color: white;
+                    &:before {
+                        content: '\f002';
+                        display: inline-block;
+                        font: normal normal normal 22px/1 FontAwesome;
+                        text-rendering: auto;
+                        -webkit-font-smoothing: antialiased;
+                    } // &:before
+                } // i
+            } // button
+        } // li
+    } // top-menu
+} // site-header
