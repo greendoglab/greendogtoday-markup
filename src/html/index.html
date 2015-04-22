@@ -33,36 +33,21 @@
 </section>
 <!-- /poster -->
 
+<!-- site-container -->
 <div class="site-container">
 
     <!-- content -->
     <section class="content">
 
-        <!-- post -->
-        <div class="post">
-            <header>
-                <div class="meta">
-                    <div class="author-photo">
-                        <img src="" alt="">
-                    </div>
-                    <div class="author-and-time">
-                        <a href="#" class="author-name"></a>
-                        <time>1231</time>
-                    </div>
-                    <nav class="tags">
-                        <a href="">Travel</a>
-                        <a href="">Philippines</a>
-                        <a href="">Lapu-Lapu</a>
-                    </nav>
-                </div>
-                <div class="poster-small"></div>
-            </header>
-            <article>
-                <h2>Some travel in Philippines, when happynes come true</h2>
-                <p>How will you pay? - спрашивает девушка на кассе. Вторая стоит рядом и складывает покупки в пакет.</p>
-            </article>
-        </div>
-        <!-- /post -->
+        @@include('partials/_post.html', {
+            "title": "Philippines is realy cool!"
+        })
+        @@include('partials/_post.html', {
+            "title": "Bangkok is amazing! We love Bangkock :)"
+        })
+        @@include('partials/_post.html', {
+            "title": "We are run away from Ukrainian war :("
+        })
 
     </section>
     <!--/content -->
@@ -128,7 +113,9 @@
         <!-- /side-block -->
 
     </aside>
-    <!-- /aside --></div>
+    <!-- /aside -->
+</div>
+<!-- /site-container -->
 
 </body>
 </html>

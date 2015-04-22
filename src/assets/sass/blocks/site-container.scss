@@ -1,0 +1,14 @@
+.site-container {
+    margin-top: 30px;
+    @include container;
+    display: flex;
+    flex-flow: row nowrap;
+    .content {
+        flex: 1 65%;
+        padding-right: 15px;
+    } // content
+    .site-side {
+        flex: 1 35%;
+        padding-left: 15px;
+    } // site-side
+} // site-container
