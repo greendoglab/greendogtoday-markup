@@ -1,17 +1,3 @@
-// container
-$padding-side: 30px;
-$padding-side-tablet: $padding-side;
-$padding-side-mobile: 10px;
-
 .container {
-    width: calc(100% - ($padding-side * 2));
-    padding: 0 $padding-side;
-    @include bp(xs) {
-        width: calc(100% - ($padding-side-mobile * 2));
-        padding: 0 $padding-side-mobile;
-    } // xs
-    @include bp(sm) {
-        width: calc(100% - ($padding-side-mobile * 2));
-        padding: 0 $padding-side-mobile;
-    } // sm
+    @include container;
 } // container

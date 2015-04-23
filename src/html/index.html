@@ -26,12 +26,57 @@
 
 <!-- poster -->
 <section class="poster">
-    <div class="main-poster" style="background-image: url('/static/images/philippines.jpg');">
+    <div class="poster-content" style="background-image: url('/static/images/philippines.jpg');">
         <span>Greendog.today – нескучный блог о путешествиях! Все что вы хотели знать об Азии находится тут!</span>
         <i class="fa fa.chevron-down"></i>
     </div>
 </section>
 <!-- /poster -->
+
+<!-- site-container -->
+<div class="site-container">
+
+    <!-- content -->
+    <section class="content">
+
+        @@include('partials/_post.html', {
+            "title": "Philippines is realy cool!"
+        })
+        @@include('partials/_post.html', {
+            "title": "Bangkok is amazing! We love Bangkock :)"
+        })
+        @@include('partials/_post.html', {
+            "title": "We are run away from Ukrainian war :("
+        })
+
+        @@include('partials/pagination.html')
+
+    </section>
+    <!--/content -->
+
+    <!-- aside -->
+    <aside class="site-side">
+
+        <!-- side-block -->
+        <div class="side-block">
+            <h3 class="side-title">Популярное</h3>
+            <ul>
+                @@include('partials/_side-list.html')
+                @@include('partials/_side-list.html')
+                @@include('partials/_side-list.html')
+                @@include('partials/_side-list.html')
+                @@include('partials/_side-list.html')
+            </ul>
+        </div>
+        <!-- /side-block -->
+
+    </aside>
+    <!-- /aside -->
+
+</div>
+<!-- /site-container -->
+
+@@include('partials/footer.html')
 
 </body>
 </html>

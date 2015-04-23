@@ -1,6 +1,9 @@
 .poster {
     @include table;
-    .main-poster {
+    @include bp(xs) {
+        display: none;
+    } // xs
+    .poster-content {
         @include table-cell;
         vertical-align: middle;
         text-align: center;
@@ -29,5 +32,5 @@
                 font-weight: 200;
             } // &:before
         } // i
-    } // main-poster
+    } // poster-content
 } // poster

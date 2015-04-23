@@ -8,9 +8,31 @@
         li {
             margin-right: 35px;
             flex: 0 0 auto;
+            @include bp(xs) {
+                display: none;
+            } // xs
+            &.mobile {
+                display: none;
+                @include bp(xs) {
+                    display: block;
+                } // xs
+            } // &.mobile
             a {
                 text-decoration: none;
                 color: white;
+                &.cheesburger {
+                    display: none;
+                    &:before {
+                        @include icon-fa;
+                        content: '\f0c9';
+                    } // &:before
+                    @include bp(xs) {
+                        @include inline-middle;
+                    } // xs
+                    @include bp(sm) {
+                        @include inline-middle;
+                    } // sm
+                } // &.cheesburger
             } // a
             input {
                 padding: 10px;
