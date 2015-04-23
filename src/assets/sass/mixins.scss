@@ -89,9 +89,23 @@
     box-shadow: $rem $color;
 }
 
+@mixin icon {
+   font-size: inherit;
+   line-height: 1;
+   text-rendering: auto;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+   transform: translate(0, 0);
+}
+
+@mixin icon-fa {
+   @include icon;
+   font-family: FontAwesome;
+}
+
 $padding-side: 30px;
 $padding-side-tablet: $padding-side;
-$padding-side-mobile: 10px;
+$padding-side-mobile: 20px;
 
 @mixin container {
     width: calc(100% - ($padding-side * 2));

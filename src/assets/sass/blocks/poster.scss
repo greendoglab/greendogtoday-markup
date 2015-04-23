@@ -1,5 +1,8 @@
 .poster {
     @include table;
+    @include bp(xs) {
+        display: none;
+    } // xs
     .poster-content {
         @include table-cell;
         vertical-align: middle;
