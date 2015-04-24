@@ -11,11 +11,17 @@
             @include bp(xs) {
                 display: none;
             } // xs
+            @include bp(sm) {
+                display: none;
+            } // sm
             &.mobile {
                 display: none;
                 @include bp(xs) {
                     display: block;
                 } // xs
+                @include bp(sm) {
+                    display: block;
+                } // sm
             } // &.mobile
             a {
                 text-decoration: none;
