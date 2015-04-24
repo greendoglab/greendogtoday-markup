@@ -32,6 +32,9 @@ img {
     display: block;
     max-width: 100%;
     vertical-align: top;
+    &.portrait {
+        max-height: 86vh;
+    } // &.portrait
 } // img
 
 a {
