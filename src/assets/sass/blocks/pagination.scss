@@ -6,10 +6,12 @@
         li {
             padding: 0 7px;
             a {
+                @include inline-middle;
                 font-size: rem(18);
                 font-weight: bold;
                 text-decoration: none;
                 color: black;
+                padding: 4px 8px;
             } // a
             &.active {
                 background-color: #2ECC71;
