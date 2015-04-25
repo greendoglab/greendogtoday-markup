@@ -61,13 +61,13 @@
         } // poster-small
     } // header
     .post-preview {
+        .article-title {
+            font-weight: bold;
+            color: black;
+            font-size: rem(24);
+        } // article-title
         .preview-link {
             text-decoration: none;
-            h2 {
-                font-weight: bold;
-                color: black;
-                font-size: rem(24);
-            } // h2
             p {
                 color: #616161;
                 font-size: rem(18);
