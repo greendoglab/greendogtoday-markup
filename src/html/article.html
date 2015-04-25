@@ -10,8 +10,8 @@
 <!-- Render -->
 <link rel="stylesheet" type="text/css" href="/static/css/normalize.css">
 <link rel="stylesheet" type="text/css" href="/static/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="/static/css/social-likes_flat.css">
 <link rel="stylesheet" type="text/css" href="/static/css/style.css">
-<script src="/static/js/production.js"></script>
 
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
@@ -55,8 +55,8 @@
                     </nav>
                 </div>
             </header>
+            <h2 class="article-title">Some travel in Philippines, when happynes come true</h2>
             <article>
-                <h2>Some travel in Philippines, when happynes come true</h2>
                 <p>
                     Именно для супов нужен отдельный пост, решили мы. Они хронически и навсегда запали нам в душу.
                     Если вы решили поесть суп дома, вам все тщательно запакуют в полиэтиленовые пакетики. Отдельно бульон, отдельно лапша, на ваш выбор, с молодыми проростками каких-то зерен, мясными тефтелями с рыбными шариками либо ломтиками курицы на гриле, и конечно же очень острый соус, тоже отдельно.
@@ -67,27 +67,53 @@
                 <p>
                     <img src="\static/images/boat.jpg">
                 </p>
-                <figure>
-                    <div class="if"><iframe width="560" height="315" src="//www.youtube.com/embed/2vjPBrBU-TM" frameborder="0" allowfullscreen=""></iframe></div>
-                </figure>
+                <div class="if"><iframe width="560" height="315" src="//www.youtube.com/embed/2vjPBrBU-TM" frameborder="0" allowfullscreen=""></iframe></div>
                 <p>
                     Для нас была сначала загадка, почему в добавок ко всему этому прилагался пакетик сахара, то что красный сушеный перец - это понятно. Оказывается сахар гасит остроту и остается некая пикантность вкуса. Молодые побеги добавляют сочности лапше. С солью повара всегда угадывали. Острый соус я всегда выкидывала, а вот сахар не помешает добавить в бульон даже не подсыпая сушеного перца. Ну это для таких как я. Для меня даже бульон островат, а с сахаром в самый раз.
                 </p>
+                <blockquote>
+                    asdasd
+                </blockquote>
+                <div class="instagram">
+                    <iframe src="//instagram.com/p/ZK9sIbH8G4/embed/" width="612" height="710" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+                </div>
             </article>
         </div>
         <!-- /single-post -->
 
-        <!-- related-posts -->
-        <section class="related-posts">
-            <h3>Ещё записи</h3>
-            <ul>
-                @@include('partials/_side-list.html')
-                @@include('partials/_side-list.html')
-                @@include('partials/_side-list.html')
-                @@include('partials/_side-list.html')
-            </ul>
-        </section>
-        <!-- /related-posts -->
+        <!-- post aside -->
+        <aside class="post-aside">
+            <!-- social -->
+            <section class="post-social">
+                <h3 class="aside-title">Поделись заметкой с друзьями</h3>
+                <div class="social-likes" data-url="greendog.today" data-title="greendogtoday">
+                    <div class="facebook" title="Поделиться ссылкой на Фейсбуке">Facebook</div>
+                    <div class="twitter" data-via="greendogtoday" title="Поделиться ссылкой в Твиттере">Twitter</div>
+                    <div class="plusone" title="Поделиться ссылкой в Гугл-плюсе">Google+</div>
+                    <div class="pinterest" title="Поделиться картинкой на Пинтересте" data-media="">Pinterest</div>
+                </div>
+            </section>
+            <!-- /social -->
+
+            <!-- related-posts -->
+            <section class="related-posts">
+                <h3 class="aside-title">Ещё записи</h3>
+                <ul class="related-bottom">
+                    @@include('partials/_side-list.html')
+                    @@include('partials/_side-list.html')
+                    @@include('partials/_side-list.html')
+                    @@include('partials/_side-list.html')
+                </ul>
+            </section>
+            <!-- /related-posts -->
+
+            <!-- related-posts -->
+            <section class="post-comments">
+                <h3 class="aside-title">Комментарии</h3>
+            </section>
+            <!-- /related-posts -->
+        </aside>
+        <!-- /post aside -->
 
     </section>
     <!--/content -->
@@ -115,6 +141,8 @@
 <!-- /site-container -->
 
 @@include('partials/footer.html')
+
+<script src="/static/js/production.js"></script>
 
 </body>
 </html>

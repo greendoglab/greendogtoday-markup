@@ -1,5 +1,4 @@
 .related-posts {
-    margin-bottom: 100px;
     h3 {
         font-size: rem(18);
         font-weight: bold;
@@ -8,9 +7,23 @@
         @include clear-list-inline;
         display: flex;
         flex-flow: row wrap;
+        &.related-bottom {
+            li {
+                &:nth-child(2n+1) {
+                    padding-right: 10px;
+                    @include bp(xs) {
+                        padding-right: 0;
+                    } // xs
+                    @include bp(sm) {
+                        padding-right: 0;
+                    } // sm
+                }
+            } // li
+        } // &.related-bottom
         li {
             flex: 1 50%;
             margin-bottom: 20px;
+            box-sizing: border-box;
             @include bp(xs) {
                 + li {
                     margin-top: 20px;
