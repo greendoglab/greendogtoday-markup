@@ -65,7 +65,7 @@
                 margin: 0 auto;
             } // img
         } // p
-        * + * {
+        > * + * {
             margin-top: 20px !important;
         } // * + *
         h2, h3, h4, h5 {

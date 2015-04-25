@@ -10,8 +10,8 @@
 <!-- Render -->
 <link rel="stylesheet" type="text/css" href="/static/css/normalize.css">
 <link rel="stylesheet" type="text/css" href="/static/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="/static/css/social-likes_flat.css">
 <link rel="stylesheet" type="text/css" href="/static/css/style.css">
-<script src="/static/js/production.js"></script>
 
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
@@ -81,17 +81,39 @@
         </div>
         <!-- /single-post -->
 
-        <!-- related-posts -->
-        <section class="related-posts">
-            <h3>Ещё записи</h3>
-            <ul class="related-bottom">
-                @@include('partials/_side-list.html')
-                @@include('partials/_side-list.html')
-                @@include('partials/_side-list.html')
-                @@include('partials/_side-list.html')
-            </ul>
-        </section>
-        <!-- /related-posts -->
+        <!-- post aside -->
+        <aside class="post-aside">
+            <!-- social -->
+            <section class="post-social">
+                <h3 class="aside-title">Поделись заметкой с друзьями</h3>
+                <div class="social-likes" data-url="greendog.today" data-title="greendogtoday">
+                    <div class="facebook" title="Поделиться ссылкой на Фейсбуке">Facebook</div>
+                    <div class="twitter" data-via="greendogtoday" title="Поделиться ссылкой в Твиттере">Twitter</div>
+                    <div class="plusone" title="Поделиться ссылкой в Гугл-плюсе">Google+</div>
+                    <div class="pinterest" title="Поделиться картинкой на Пинтересте" data-media="">Pinterest</div>
+                </div>
+            </section>
+            <!-- /social -->
+
+            <!-- related-posts -->
+            <section class="related-posts">
+                <h3 class="aside-title">Ещё записи</h3>
+                <ul class="related-bottom">
+                    @@include('partials/_side-list.html')
+                    @@include('partials/_side-list.html')
+                    @@include('partials/_side-list.html')
+                    @@include('partials/_side-list.html')
+                </ul>
+            </section>
+            <!-- /related-posts -->
+
+            <!-- related-posts -->
+            <section class="post-comments">
+                <h3 class="aside-title">Комментарии</h3>
+            </section>
+            <!-- /related-posts -->
+        </aside>
+        <!-- /post aside -->
 
     </section>
     <!--/content -->
@@ -119,6 +141,8 @@
 <!-- /site-container -->
 
 @@include('partials/footer.html')
+
+<script src="/static/js/production.js"></script>
 
 </body>
 </html>
